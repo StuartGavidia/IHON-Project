@@ -122,12 +122,11 @@ nav .second {
     display: inline-block;
     height: 150px;
     width: 300px;
-    margin: 5px 150px;
+    margin: 0px 15%;
     border: 1px solid black;
     padding: 50px;
     overflow: scroll;
-    bottom: 125px;
-    right: 125px;
+    margin-bottom: 5%;
     font-size: 25px;
     background-color: lightsalmon;
 }
@@ -140,18 +139,18 @@ nav .second {
     display: inline-block;
     height: 150px;
     width: 300px;
-    margin: 5px 150px;
+    margin: 0px 15%;
     border: 1px solid black;
     padding: 50px;
     overflow: scroll;
-    bottom: 120px;
-    left: 150px;
+    margin-bottom: 5%;
     font-size: 25px;
     background-color: lightsalmon;
 }
 
 .imagesforpodcast {
-    height: 450px;
+    height: 375px;
+    margin-top: 2%;
 }
 
 .homepageintro {
@@ -163,7 +162,7 @@ nav .second {
     display: block;
     width: 100px;
     height: 25px;
-    left: 650px;
+    left: 47%;
     top: 10px;
     background-color: brown;
     color: white;
@@ -175,7 +174,7 @@ nav .second {
     width: 500px;
     height: 150px;
     font-size: 25px;
-    left: 450px;
+    left: 33%;
     overflow: scroll;
     background-color: lightsalmon;
     color: black;
