@@ -1,0 +1,183 @@
+html {
+    background-image: url("https://i.ibb.co/8dn5Mdj/Screen-Shot-2021-11-29-at-7-45-00-PM.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: "Times New Roman" serif;
+}
+
+h1 {
+    color: darkgoldenrod;
+    border: 1px solid black;
+    background-color: brown;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0px;
+    height: 50px;
+    font-size: 50px;
+    padding: 10px;
+}
+
+
+h6 {
+    position: relative;
+    border: 1px solid black;
+    padding: 20px;
+    width: 250px;
+    margin-top: 0px;
+    background-color: orange;
+    opacity: 0.6;
+    color: black;
+    text-align: center;
+}
+
+p {
+    position: relative;
+    font-size: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav .first {
+    float: right;
+}
+
+nav .second {
+    float: left;
+}
+
+.firstImage {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+}
+
+.podcastFirstImage {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+}
+
+.firstPart {
+    position: relative;
+    margin-top: 450px;
+}
+
+.firstPartPodcast {
+    position: relative;
+    margin-top: 575px;
+}
+
+.page {
+    position: relative;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    top: 0px;
+    background-color: orange;
+}
+
+.page a:hover,
+.page:hover {
+    color: white;
+    background-color: brown;
+}
+
+.podcast {
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.podcastText {
+    overflow: scroll;
+    width: 300px;
+    height: 100px;
+    border: 2px solid goldenrod;
+    background-color: lightsalmon;
+}
+
+.podcastvideo {
+    text-align: center;
+    position: relative;
+}
+
+.podcastsectionone {
+    text-align: center;
+}
+
+.podcastsectionone p{
+    display: inline-block;
+    height: 150px;
+    width: 300px;
+    margin: 5px 150px;
+    border: 1px solid black;
+    padding: 50px;
+    overflow: scroll;
+    bottom: 125px;
+    right: 125px;
+    font-size: 25px;
+    background-color: lightsalmon;
+}
+
+.podcastsectiontwo {
+    text-align: center;
+}
+
+.podcastsectiontwo p{
+    display: inline-block;
+    height: 150px;
+    width: 300px;
+    margin: 5px 150px;
+    border: 1px solid black;
+    padding: 50px;
+    overflow: scroll;
+    bottom: 120px;
+    left: 150px;
+    font-size: 25px;
+    background-color: lightsalmon;
+}
+
+.imagesforpodcast {
+    height: 450px;
+}
+
+.homepageintro {
+    text-align: center;
+}
+
+.homepageintro h3 {
+    border: 1px solid black;
+    display: block;
+    width: 100px;
+    height: 25px;
+    left: 650px;
+    top: 10px;
+    background-color: brown;
+    color: white;
+}
+
+.homepageintro p {
+    border: 1px solid black;
+    display: block;
+    width: 500px;
+    height: 150px;
+    font-size: 25px;
+    left: 450px;
+    overflow: scroll;
+    background-color: lightsalmon;
+    color: black;
+}
+
