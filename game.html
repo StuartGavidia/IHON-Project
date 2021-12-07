@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Survey game</title>
+    <style>
+      body {
+        background-image: url(images/Background.jpg);
+        background-repeat: repeat-y;
+        background-size: 100%;
+        color: white;
+        text-align: center;
+      }
+      h1 {
+        border: 1px solid black;
+        background-color: brown;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="podcast.html"><h1>Who are you Game</h1></a>
+
+    <form>
+      <p>First Question</p>
+     <input type="radio" id="q1yes" name="answer1" value="0">
+     <label for="q1yes">Yes</label>
+     <input type="radio" id="q1no" name="answer1" value=1>
+     <label for="q1no">No</label>
+
+     <p>Second Question</p>
+     <input type="radio" id="q2yes" name="answer2" value="0">
+     <label for="q2yes">Yes</label>
+     <input type="radio" id="q2no" name="answer2" value="1">
+     <labe for="q2no">No</label>
+
+     <p>Third Question</p>
+     <input type="radio" id="q3yes" name="answer3" value="0">
+     <label for="q3yes">Yes</label>
+     <input type="radio" id="q3no" name="answer3" value="1">
+     <label for="q3no">No</label>
+
+     <p>Fourth Question</p>
+     <input type="radio" id="q4yes" name="answer4" value="0">
+     <label for="q4yes">Yes</label>
+     <input type="radio" id="q4no" name="answer4" value="1">
+     <label for="q4no">No</label>
+
+     <p>Fifth Question</p>
+     <input type="radio" id="q5yes" name="answer5" value="0">
+     <label for="q5yes">Yes</label>
+     <input type="radio" id="q5no" name="answer5" value="1">
+     <label for="q5no">No</label>
+
+     <p>Sixth Question</p>
+     <input type="radio" id="q6yes" name="answer6" value="0">
+     <label for="q6yes">Yes</label>
+     <input type="radio" id="q6no" name="answer6" value="1">
+     <label for="q6no">No</label>
+
+     <p>Seventh Question</p>
+     <input type="radio" id="q7yes" name="answer7" value="0">
+     <label for="q7yes">Yes</label>
+     <input type="radio" id="q7no" name="answer7" value="1">
+     <label for="q7no">No</label>
+
+     <p>Eighth Question</p>
+     <input type="radio" id="q8yes" name="answer8" value="0">
+     <label for="q8yes">Yes</label>
+     <input type="radio" id="q8no" name="answer8" value="1">
+     <label for="q8no">No</label>
+
+     <p>Ninth Question</p>
+     <input type="radio" id="q9yes" name="answer9" value="0">
+     <label for="q9yes">Yes</label>
+     <input type="radio" id="q9no" name="answer9" value="1">
+     <label for="q9no">No</label>
+
+     <p>Tenth Question</p>
+     <input type="radio" id="q10yes" name="answer10" value="0">
+     <label for="q1">Yes</label>
+     <input type="radio" id="q10no" name="answer10" value="1">
+     <label for="q10no">No</label>
+
+     <br>
+     <br>
+
+     <button onClick="sumAnswers()" >Submit!</button>
+
+    </form>
+
+    <section id="results">
+        <!--Why is this section not working???-->
+    </section>
+
+    <section class="output">
+        <p>Results</p>
+    </section>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+
+        function showValues() {
+            var str = $( "form" ).serialize();
+            $( "#results" ).text( str );
+        }
+        $( "input[type='radio']" ).on( "click", showValues );
+        $( "select" ).on( "change", showValues );
+        showValues();
+
+        const sumAnswers = () => {
+            const str = showValues();
+            const arrayFull = str.split("&");
+            const answers = [];
+            for (let i = 0; i < arrayFull.length; i++){
+                let currentStr = arrayFull[i];
+                answers.push(str.charAt(currentStr.length() - 1));
+            }
+
+            const score = 0;
+
+            for (let i = 0; i < answers.length; i++){
+                if (answers[i] === '0'){
+                    score++;
+                }
+            }
+
+            if (score > 5){
+                $( ".output" ).append( "<p>You are Muhammad</p>" );
+            }
+            else {
+                $( ".output" ).append( "<p>You are Augustus</p>" );
+            }
+
+        }
+
+
+
+            /*    $("button").on("click", () => {
+                $("#q1yes").val()
+              console.log($("#q1yes").val())
+              })
+
+          const sumAnswers = () => {
+              $("button").on("click", () => {
+                $("#q1yes").val()
+              console.log($("#q1yes").val())
+              })
+              //need to find way to add values then render output to output
+              //got to use innerHTML
+          }*/
+      </script>
+     
+
+  </body>
+</html>
