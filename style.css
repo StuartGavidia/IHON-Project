@@ -182,3 +182,29 @@ nav .second {
     color: black;
 }
 
+.podcastscript {
+    border: 1px solid black;
+    width: 40%;
+    margin: 1px auto;
+    height: 100px;
+    overflow: scroll;
+    background-color: lightsalmon;
+    color: black;
+}
+
+.bib {
+    text-align: center;
+}
+
+.bib p {
+    color: white;
+    border: 1px solid black;
+    width: 20%;
+    margin: 10px auto;
+    background-color: darkred;
+}
+
+.bib p:hover {
+    background-color: orange;
+    color: black;
+}

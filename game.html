@@ -21,7 +21,7 @@
   <body>
     <a href="podcast.html"><h1>Who are you Game</h1></a>
 
-    <form>
+    <form onsubmit="return false">
       <p>First Question</p>
      <input type="radio" id="q1yes" name="answer1" value="0">
      <label for="q1yes">Yes</label>
@@ -85,12 +85,11 @@
      <br>
      <br>
 
-     <button onClick="sumAnswers()" >Submit!</button>
-
+     <button id="submitter" type="button" onClick="sumAnswers()" >Submit!</button>
     </form>
 
     <section id="results">
-        <!--Why is this section not working???-->
+        <!--Separated sections to fix a bug-->
     </section>
 
     <section class="output">
@@ -100,13 +99,18 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script>
 
+        const str = "";
+
         function showValues() {
-            var str = $( "form" ).serialize();
+            str = $( "form" ).serialize();
             $( "#results" ).text( str );
         }
+
         $( "input[type='radio']" ).on( "click", showValues );
         $( "select" ).on( "change", showValues );
         showValues();
+
+        $( "#submitter" ).on( "click", sumAnswers );
 
         const sumAnswers = () => {
             const str = showValues();
